@@ -1,0 +1,49 @@
+/* DegradeText.module.css */
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 100% 0;
+    }
+    50% {
+      background-position: 0% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  .gradientText {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ec4899, #f97316, #f59e0b);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 2.5s ease-in-out infinite;
+    letter-spacing: -0.05em;
+    line-height: 1.1; /* Ajusta o espaçamento entre as linhas */
+  }
+
+  .subGradientText {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2px;
+    background: linear-gradient(90deg, #ec4899, #f97316, #f59e0b);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 2.5s ease-in-out infinite;
+    letter-spacing: -0.05em;
+    line-height: 1.1; /* Ajusta o espaçamento entre as linhas */
+  }
+
+  @media (min-width:1390px ){
+    .gradientText{
+      font-size: 6rem;
+    }
+    .subGradientText{
+      font-size: 2rem;
+    }
+  }
+  
+  
